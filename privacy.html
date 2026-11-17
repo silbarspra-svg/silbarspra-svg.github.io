@@ -16,7 +16,6 @@
 <h2>Data the app accesses</h2>
 <ul>
 <li><strong>YouTube (Google):</strong> permission to upload videos to the connected channel, read the channel name, and read statistics and analytics (views, likes, comments, watch time) for the channel's videos.</li>
-<li><strong>Instagram:</strong> permission to publish Reels to the connected professional account and read basic profile information and insights for its posts.</li>
 <li><strong>TikTok:</strong> permission to send videos to the connected account's drafts and read basic profile information and statistics for its videos.</li>
 </ul>
 
@@ -24,7 +23,7 @@
 <ul>
 <li>Data is used only to publish the owner's videos and to show the owner statistics about them.</li>
 <li>Access tokens and statistics are stored only on the owner's computer.</li>
-<li>To publish to Instagram, a video file is uploaded to temporary cloud storage (Cloudflare R2) so that Instagram can download it. These files are deleted automatically within one day.</li>
+<li>Video files are sent directly from the owner's computer to the platform's official API. They are not stored on any other server.</li>
 <li>Data is not sold, shared with third parties, or used for advertising. The app does not use cookies or tracking.</li>
 </ul>
 
@@ -35,7 +34,6 @@
 <h2>Revoking access and deleting data</h2>
 <ul>
 <li>Google / YouTube: remove the app at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-<li>Instagram: remove the app under Settings → Website permissions → Apps and websites.</li>
 <li>TikTok: remove the app under Settings and privacy → Security → Manage app permissions.</li>
 </ul>
 <p>After access is revoked, the app can no longer reach the account. Locally stored tokens and statistics are deleted when the owner disconnects an account in the app, or on request.</p>
